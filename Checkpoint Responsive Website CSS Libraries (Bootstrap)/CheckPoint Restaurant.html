@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes du footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            color: white;
+        }
+        .menu-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .about-img {
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HEADER SECTION (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fas fa-utensils me-2">     RESTAURANT</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">BONJOUR</h1>
+            <p class="lead mb-4">Des plats faits maison préparés avec passion et des ingrédients frais de saison.</p>
+            <a href="#menu" class="btn btn-warning btn-lg fw-semibold px-4">Découvrir le Menu</a>
+        </div>
+    </header>
+
+    <!-- 3. MENU SECTION -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Notre Menu</h2>
+            <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-150 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Pizza Margherita">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Pizza Margherita</h5>
+                            <p class="card-text text-muted flex-grow-1">Sauce tomate, mozzarella.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold fs-5">15 TND</span>
+                                <a href="#contact" class="btn btn-outline-dark btn-sm">Commander</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Pizza Thon">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Pizza Thon</h5>
+                            <p class="card-text text-muted flex-grow-1">Sauce tomate, mozzarella, Thon.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold fs-5">22 TND</span>
+                                <a href="#contact" class="btn btn-outline-dark btn-sm">Commander</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Pasta Carbonara">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Spaghetti</h5>
+                            <p class="card-text text-muted flex-grow-1">Pâtes fraîches, sauce tomate</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold fs-5">26 TND</span>
+                                <a href="#contact" class="btn btn-outline-dark btn-sm">Commander</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ABOUT US SECTION -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" class="img-fluid about-img shadow w-100" alt="Notre Restaurant">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">À Propos de Nous</h2>
+                    <p class="text-muted">  <strong>  Le restaurant </strong>  Fondé en 2026 </p>
+                    <a href="#contact" class="btn btn-dark mt-2">Réserver une table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Contact & Réservation</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="bg-white p-4 p-md-5 rounded shadow-sm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold">Nom complet</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Adresse Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="votre.email@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-semibold">Message / Réservation</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Précisez votre demande ou date de réservation..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 fw-semibold py-2">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 WAEL BEN FADHEL. Tous droits réservés.</p>
+            <div class="social-icons fs-5">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
